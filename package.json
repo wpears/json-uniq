@@ -1,0 +1,28 @@
+{
+  "name": "json-uniq",
+  "version": "0.0.1",
+  "description": "Parse json as a stream and run uniq on it",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wpears/json-uniq.git"
+  },
+  "keywords": [
+    "uniq",
+    "json",
+    "stream"
+  ],
+  "author": "Wyatt Pearsall <wyatt.pearsall@cfpb.gov>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wpears/json-uniq/issues"
+  },
+  "homepage": "https://github.com/wpears/json-uniq",
+  "dependencies": {
+    "JSONStream": "^0.10.0",
+    "request": "^2.54.0"
+  }
+}

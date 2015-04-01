@@ -4,7 +4,8 @@
   "description": "Parse json as a stream and run uniq on it",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "preinstall": "npm install git+https://github.com/wpears/JSONStream.git"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,6 @@
   },
   "homepage": "https://github.com/wpears/json-uniq",
   "dependencies": {
-    "JSONStream": "^0.10.0",
     "request": "^2.54.0"
   }
 }

@@ -12,9 +12,12 @@ Uniq.prototype._transform = function(chunk, enc, cb){
   }
 
   var matched = this.matcher(this.lastItem, chunk)
-  if(matched){
-  }
+  if(!matched) this.lastItem = chunk;
   cb();
+}
+
+Uniq.prototype._flush = function(cb){
+  this.lastItem = null;
 }
 
 function Uniq(matcher, obj){

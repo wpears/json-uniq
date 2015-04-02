@@ -4,8 +4,7 @@
   "description": "Parse json as a stream and run uniq on it",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js",
-    "preinstall": "npm install git+https://github.com/wpears/JSONStream.git"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",

@@ -4,6 +4,8 @@ var deepEqual = require('deep-equal');
 
 var objMode = {objectMode:1};
 
+inherits(Uniq, Transform);
+
 Uniq.prototype._transform = function(chunk, enc, cb){
   if(!this.lastItem){
     this.lastItem = chunk;
@@ -23,7 +25,7 @@ Uniq.prototype._flush = function(cb){
 function Uniq(matcher, obj){
   if(!(this instanceof Uniq)) return new Uniq(matcher, obj); 
   if(!matcher) matcher = deepEqual;
-  if(!obj) obj = objectMode;
+  if(!obj) obj = objMode;
 
   this.matcher = matcher;
   this.lastItem = null;

@@ -23,8 +23,9 @@
   },
   "homepage": "https://github.com/wpears/json-uniq",
   "dependencies": {
-    "request": "^2.54.0",
-    "through2": "^0.6.3"
+    "deep-equal": "^1.0.0",
+    "inherits": "^2.0.1",
+    "readable-stream": "^1.0.33"
   },
   "devDependencies": {
     "tape": "^3.5.0"
